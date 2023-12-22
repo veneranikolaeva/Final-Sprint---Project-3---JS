@@ -1,0 +1,57 @@
+// FETCH and READ the index.json disk file
+
+fetch('./actors.json')
+  .then(response => response.json())
+  .then(data => {
+    // Create a container to hold the actors data
+    const container = document.createElement('div');
+    container.id = 'actorsContainer';
+
+    // Loop through an array in the JSON data
+    data.forEach(actor => {
+      // Create a new div for each actor
+      const actorDiv = document.createElement('div');
+      actorDiv.className = 'actor';
+
+ // Add the actor's data to the div
+ actorDiv.innerHTML = `
+ <h2>${getFullName(actor)}</h2>
+ <p>Age: ${getAge(actor)}</p>
+ <p>Hobby: ${getHobby(actor)}</p>
+ <p>HarryPotterCharacter: ${getHarryPotterCharacter(actor)}</p>
+`;
+
+// Add the actor's div to the container
+container.appendChild(actorDiv);
+
+// Also log the data to the console
+console.log(getFullName(actor));
+console.log(getAge(actor));
+console.log(getHobby(actor));
+console.log(getHarryPotterCharacter(actor));
+});
+
+// Add the container to the body of the HTML
+document.body.appendChild(container);
+})
+.catch(error => {
+// Handle any errors that occur while fetching the file
+console.error(error);
+});
+
+function getFullName(person) {
+return `${person.fname} ${person.lname}`;
+}
+
+function getAge(actor) {    
+return `${actor.fname} is ${new Date().getFullYear() - 
+new Date(actor.birthday).getFullYear()} years old.`; 
+}
+
+function getHobby(actor){
+return `${actor.fname} likes ${actor.hobby}.`;
+}
+
+function getHarryPotterCharacter(actor){
+  return `${actor.fname} plays ${actor.harrypottercharacter}.`;
+  }

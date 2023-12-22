@@ -1,0 +1,51 @@
+[
+  {
+    "fname": "Daniel",
+    "lname": "Radcliffe",
+    "profession": "actor",
+    "birthday": "7/23/1989",
+    "harrypottercharacter": "Harry Potter",
+    "hobby": "Poetry"
+  },
+  {
+    "fname": "Emma",
+    "lname": "Watson",
+    "profession": "actress",
+    "birthday": "4/15/1990",
+    "harrypottercharacter": "Hermione Granger",
+    "hobby": "Reading"   
+  },
+  {
+    "fname": "Rupert",
+    "lname": "Grint",
+    "profession": "actor",
+    "birthday": "8/24/1988",
+    "harrypottercharacter": "Ron Weasley",
+    "hobby": "Drawing"
+  },
+  {
+    "fname": "Tom",
+    "lname": "Felton",
+    "profession": "actor",
+    "birthday": "9/22/1987",
+    "harrypottercharacter": "Draco Malfoy",
+    "hobby": "Singing"
+  },
+  {
+    "fname": "Bonnie",
+    "lname": "Wright",
+    "profession": "actress",
+    "birthday": "2/17/1991",
+    "harrypottercharacter": "Ginny Weasley",
+    "hobby": "Writing"
+  },
+  {
+  "fname": "Robert",
+  "lname": "Pattinson",
+  "profession": "actor",
+  "birthday": "5/13/1986",
+  "harrypottercharacter": "Cedric Diggory",
+  "hobby": "Designing furniture"
+
+  }
+]
